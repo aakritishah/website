@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aakriti Shah - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Hack', monospace;
+      margin: 0;
+      padding: 0;
+      background-color: #E0E7FF;
+      color: #080708;
+      text-align: center;
+    }
+
+    header {
+      background-color: #111D4A;
+      padding: 1em;
+      text-align: center;
+      color: #ffffff;
+      font-size: 24px;
+    }
+
+    nav {
+      background-color: #111D4A;
+      padding: 0.5em;
+      text-align: center;
+    }
+
+    nav a {
+      color: #9BB1FF;
+      text-decoration: none;
+      padding: 1em;
+      margin: 0 0.5em;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      border-bottom: 2px solid #7FB285;
+    }
+
+    section {
+      padding: 2em;
+      text-align: left;
+      margin: 0 3%;
+      max-width: 40%;
+    }
+
+    h2 {
+      color: #12664F;
+    }
+
+    .section-title {
+      border-bottom: 2px solid #7FB285;
+      padding-bottom: 0.5em;
+      margin-bottom: 1em;
+      color: #12664F;
+    }
+
+    .two-column {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .two-column section {
+      width: 40%;
+    }
+
+    footer {
+      background-color: #111D4A;
+      color: #9BB1FF;
+      text-align: center;
+      padding: 1em;
+      width: 100%;
+      /* Set width to 100% */
+      bottom: 0;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      border-radius: 10px;
+      /* You can adjust the radius to your preference */
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1 style="font-size: 36px;">Aakriti Shah</h1>
+    <p style="font-size: 18px;">Computer Science Graduate Applicant</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#research">Research</a>
+    <a href="#interests-hobbies">Interests & Hobbies</a>
+    <a href="#work-experience">Work Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="two-column">
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to my portfolio! Hi, my name is Aakriti and I am a computer science undergraduate student with a
+        passion
+        for topics like artificial intelligence, machine learning, and web/mobile development. I have worked on projects
+        involving technologies like deep learning and have research experience from an NSF internship focused on
+        adversarial machine learning. My passion lies in using technology to solve complex problems and building
+        innovative solutions.</p>
+    </section>
+
+    <section id="education">
+      <h2 class="section-title">Education</h2>
+      <p>I will be graduating with honors from Rollins College (Winter Park, FL) with a bachelor's degree, double
+        majoring
+        in Computer Science and Business Management. Through courses like Data Structures and Algorithms, Artificial
+        Intelligence, Database Design, and Software Engineering, I gained in-depth knowledge of coding languages like
+        Python, Java, C++, C, as well as frameworks like TensorFlow and Flask. My interdisciplinary studies allowed me
+        to
+        boost both my technical skills while building business acumen.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <ul class="project-list">
+        <li>
+          <div class="project-info">
+            <strong>Escape Room Video Game</strong>
+            <ul>
+              <li>Developed a 3D escape room game using Unity game engine and C# programming</li>
+              <li>Incorporated puzzles and interactive elements for users to solve in order to advance through levels
+              </li>
+              <li>Utilized 3D assets, textures, visual effects created using Photoshop, GIMP, and Krita</li>
+            </ul>
+          </div>
+          <div class="view-project-button">
+            <a href="link-to-code" class="project-button" style="background-color: #85A1FF;">View Project</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="project-info">
+            <strong>Crochet Pattern Generator Application</strong>
+            <ul>
+              <li>Built a web application to convert image inputs of patterns into crochet patterns</li>
+              <li>Employed convolutional neural networks implemented in Python and TensorFlow/Keras to analyze image
+                inputs
+              </li>
+              <li>Generated step-by-step text instructions for reproducing crochet versions of input images</li>
+              <li>Developed frontend interface allowing image uploads/crochet pattern visualization using React</li>
+            </ul>
+          </div>
+          <div class="view-project-button">
+            <a href="link-to-code" class="project-button" style="background-color: #85A1FF;">View Project</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="project-info">
+            <strong>‘ASLearning’ Sign Language Translation App</strong>
+            <ul>
+              <li>Created real-time mobile app translating sign language into text and speech</li>
+              <li>Trained machine learning model on sign language image dataset using TensorFlow</li>
+              <li>Built cross-platform application with Flutter framework along with integration to Firebase backend
+              </li>
+            </ul>
+          </div>
+          <div class="view-project-button">
+            <a href="link-to-code" class="project-button" style="background-color: #85A1FF;">View Project</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="project-info">
+            <strong>'voteSmart' Political Candidate Matching Web App</strong>
+            <ul>
+              <li>Developed a web platform to match users to political candidates based on policy stance survey</li>
+              <li>Built backend REST API with Flask framework and MySQL database</li>
+              <li>Implemented data visualization of candidate stances using D3.js</li>
+            </ul>
+          </div>
+          <div class="view-project-button">
+            <a href="link-to-code" class="project-button" style="background-color: #85A1FF;">View Project</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <style>
+      .project-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .project-list li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+      }
+
+      .project-info {
+        width: 70%;
+      }
+
+      .view-project-button {
+        width: 30%;
+      }
+
+      .project-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .project-button:hover {
+        background-color: #7B8FFF;
+      }
+    </style>
+
+
+    <section id="research">
+      <h2 class="section-title">Research</h2>
+      <ul class="project-list">
+        <li>
+          <div class="project-info">
+            <strong>Adversarial Machine Learning in Autonomous Vehicles</strong>
+            <ul>
+              <li>NSF Research Intern focused on adversarial ML approaches for self-driving cars</li>
+              <li>Simulated attacks against autonomous vehicle systems to gauge security vulnerabilities</li>
+              <li>Analyzed impact of perturbations/input manipulation on ML model behavior</li>
+              <li>Researched techniques to improve model robustness against potential exploits</li>
+            </ul>
+          </div>
+          <div class="view-project-button">
+            <a href="link-to-code" class="project-button" style="background-color: #85A1FF;">View Project</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="project-info">
+            <strong>Evaluating AI Sentiment Analysis</strong>
+            <ul>
+              <li>Honors thesis research using large language models for textual analysis</li>
+              <li>Manually labeled interview transcripts to create evaluation dataset</li>
+              <li>Compared model outputs from transformers like BERT against human labeled sentiments</li>
+              <li>Evaluated accuracy of sentiment classification across various sized datasets</li>
+            </ul>
+          </div>
+          <div class="view-project-button">
+            <a href="link-to-code" class="project-button" style="background-color: #85A1FF;">View Project</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="project-info">
+            <strong>Artificial Intelligence in Hiring Processes</strong>
+            <ul>
+              <li>Published study on the role of AI algorithms in recruitment and hiring</li>
+              <li>Scraped hiring data and job posting information to assemble analysis dataset</li>
+              <li>Identified ethical concerns around bias mitigation in automated hiring solutions</li>
+              <li>Provided recommendations for integrating AI-driven screening while preserving fairness</li>
+            </ul>
+          </div>
+          <div class="view-project-button">
+            <a href="link-to-code" class="project-button" style="background-color: #85A1FF;">View Project</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <style>
+      .project-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .project-list li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+      }
+
+      .project-info {
+        width: 70%;
+      }
+
+      .view-project-button {
+        width: 30%;
+      }
+
+      .project-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .project-button:hover {
+        background-color: #7B8FFF;
+      }
+    </style>
+
+
+    <section id="interests-hobbies">
+      <h2 class="section-title">Interests & Hobbies</h2>
+      <ul>
+        <li>
+          <strong>Crocheting</strong>
+          <ul>
+            <li>Love turning yarn into homemade creations like blankets and accessories</li>
+            <li>Sell some of my crocheted pieces online and gift items to friends and family</li>
+            <li>Enjoy following intricate crochet patterns and coming up with my own designs</li>
+            <img src="crochet.jpg" alt="crochet">
+          </ul>
+        </li>
+
+        <li>
+          <strong>Baking</strong>
+          <ul>
+            <li>Baking cakes, cookies, breads, and other tasty treats is incredibly satisfying</li>
+            <li>I gift many homemade baked goods but also indulge myself occasionally!</li>
+            <li>Requires following recipes closely and learning a range of techniques</li>
+            <img src="baking.jpg" alt="baking">
+          </ul>
+        </li>
+
+        <li>
+          <strong>Film Photography</strong>
+          <ul>
+            <li>Capture nature, cityscapes, and other scenes through 35mm film</li>
+            <li>Later develop the photos by hand in my home darkroom</li>
+            <li>Experimenting with photographic processing chemicals is engaging</li>
+            <img src="film.jpg" alt="film">
+            <img src="film1.jpg" alt="film1">
+            <img src="film2.jpg" alt="film2">
+            <img src="film3.jpg" alt="film3">
+          </ul>
+        </li>
+
+        <li>
+          <strong>Vinyl Collection</strong>
+          <ul>
+            <li>Have a growing vinyl collection spanning my favorite genres of jazz, funk, R&B and more</li>
+            <li>Enjoy crate digging at record stores to discover new music</li>
+            <li>Love the ritual of putting on a record and appreciating an entire album</li>
+            <img src="vinyl.jpg" alt="vinyl">
+          </ul>
+        </li>
+
+        <li>
+          <strong>Marvel Cinematic Universe</strong>
+          <ul>
+            <li>Have seen every MCU film multiple times and read many comic issues</li>
+            <li>Fascinated by the expansive storylines and character arcs</li>
+            <li>Impressed by the cohesion across such a vast fictional scope</li>
+            <img src="MCU.jpg" alt="MCU">
+          </ul>
+        </li>
+
+        <li>
+          <strong>Coffee</strong>
+          <ul>
+            <li>A bit of a coffee snob, always searching for new roasts and cafes</li>
+            <li>Drinking quality coffee makes nearly any activity more enjoyable</li>
+            <li>Appreciate learning subtle flavor notes that differentiate beans and brews</li>
+            <img src="coffee.jpg" alt="coffee">
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section id="work-experience">
+      <h2 class="section-title">Work Experience</h2>
+      <ul>
+        <li>
+          <strong>NSF Research Internship</strong>
+          <ul>
+            <li>Focused on adversarial ML approaches for self-driving cars</li>
+            <li>Simulated attacks against autonomous vehicle systems to gauge security vulnerabilities</li>
+            <li>Analyzed impact of perturbations/input manipulation on ML model behavior</li>
+            <li>Researched techniques to improve model robustness against potential exploits</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>iD Tech Camps Instructor</strong>
+          <ul>
+            <li>Instructed and mentored students in various technology-related subjects</li>
+            <li>Facilitated hands-on learning experiences, coding projects, and team activities</li>
+            <li>Provided guidance and support to students with varying skill levels</li>
+            <li>Contributed to a positive and collaborative learning environment</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>AutoPayPlus Internship</strong>
+          <ul>
+            <li>Describe your responsibilities and achievements during the internship</li>
+            <li>Highlight any specific projects, skills gained, or contributions to the team</li>
+            <li>Include relevant details about the nature of the internship and its duration</li>
+            <!-- Add more details as needed -->
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <ul style="list-style-type:none; padding: 0; margin: 0;">
+        <li><strong>Programming:</strong> Python, SQL, Java, JavaScript, R, Go, Assembly (ARM), C, C++, XML, Dart, C#,
+          LaTeX</li>
+        <li><strong>Frameworks:</strong> Node.js, pandas, Angular.js, Numpy, React, Flask, TensorFlow</li>
+        <li><strong>Other Skills:</strong> Validation and Processing of Data, Jupyter Notebook, Tableau, CSS and HTML,
+          AWS
+          (cloud computing), Teamwork and Collaboration, Critical Thinking, Web and Mobile App Development, CPU
+          Architecture</li>
+        <li><strong>Languages:</strong> English – Native, Hindi – Native, Spanish – Intermediate, and German – Beginner
+        </li>
+      </ul>
+    </section>
+
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="contact-content">
+        <img src="me.jpg" alt="Contact Image" class="contact-image">
+        <div class="contact-buttons">
+          <a href="mailto:u2aakriti@gmail.com" class="contact-button" style="background-color: #85A1FF;">Email</a>
+          <a href="https://www.linkedin.com/in/aakriti-shah-/" target="_blank" rel="noopener noreferrer"
+            class="contact-button" style="background-color: #85A1FF;">LinkedIn</a>
+          <a href="https://github.com/aakritishah" target="_blank" rel="noopener noreferrer" class="contact-button"
+            style="background-color: #85A1FF;">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1em;
+      }
+
+      .contact-image {
+        max-width: 60%;
+        /* Adjust as needed */
+      }
+
+      .contact-buttons {
+        flex-grow: 1;
+        margin-left: 2em;
+        /* Add margin for spacing */
+      }
+
+      .contact-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5em;
+        border-radius: 5px;
+        margin-bottom: 1em;
+        /* Add margin between buttons */
+        transition: background-color 0.3s ease;
+      }
+
+      .contact-button:hover {
+        background-color: #7B8FFF;
+      }
+    </style>
+
+
+
+
+    <footer>
+      <p>&copy; 2023 Aakriti Shah | Designed With Passion</p>
+    </footer>
+
+</body>
+
+</html>
