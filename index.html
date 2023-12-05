@@ -87,16 +87,30 @@
       border-radius: 10px;
       /* You can adjust the radius to your preference */
     }
-  /* Add this style in the head of your HTML document or in a separate CSS file */
-  ul.images-list {
-    list-style-type: none;
-    padding: 0;
-  }
 
-  ul.images-list li {
-    display: inline-block;
-    margin-right: 10px; /* Adjust as needed to create spacing between images */
-  }
+    ul.images-list {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      /* Adjust as needed */
+    }
+
+    ul.images-list li {
+      flex: 0 0 calc(33.33% - 10px);
+      /* Adjust as needed, considering margin-right */
+      margin-bottom: 10px;
+      /* Adjust as needed to create spacing between rows */
+    }
+
+    ul.images-list img {
+      width: 100%;
+      height: 200px;
+      /* Set a fixed height for all images */
+      object-fit: cover;
+      /* Ensure images maintain aspect ratio without distortion */
+    }
   </style>
 </head>
 
@@ -113,7 +127,7 @@
     <a href="#projects">Projects</a>
     <a href="#research">Research</a>
     <a href="#interests-hobbies">Interests & Hobbies</a>
-    <a href="#work-experience">Work Experience</a>
+    <a href="#work-experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </nav>
@@ -123,10 +137,11 @@
       <h2>Home</h2>
       <p>Welcome to my portfolio! Hi, my name is Aakriti and I am a computer science undergraduate student with a
         passion
-        for topics like artificial intelligence, machine learning, and web/mobile development. I have worked on projects
+        for topics like artificial intelligence, machine learning, software engineering, and data analytics. I have
+        worked on projects
         involving technologies like deep learning and have research experience from an NSF internship focused on
-        adversarial machine learning. My passion lies in using technology to solve complex problems and building
-        innovative solutions.</p>
+        adversarial machine learning. My passion lies in using technology for social good and am drawn to leveraging my
+        skills to cultivate a better society.</p>
     </section>
 
     <section id="education">
@@ -146,16 +161,38 @@
       <ul class="project-list">
         <li>
           <div class="project-info">
-            <strong>Escape Room Video Game</strong>
+            <strong>‘ASLearning’: Sign Language Translation App</strong>
             <ul>
-              <li>Developed a 3D escape room game using Unity game engine and C# programming</li>
-              <li>Incorporated puzzles and interactive elements for users to solve in order to advance through levels
+              <li>This group project was created to bridge the communication gap between hearing-impaired individuals
+                and English speakers. It utilizes TensorFlow, Flutter, and Firebase to develop a mobile app that
+                implements deep learning and image recognition to facilitate communication. The goal is to create an
+                accessible and inclusive tool for those with hearing impairments to more easily understand English
+                speech. This was such an enjoyable project to work on because it allowed me to gain skills in machine
+                learning, while simultaneously creating technology that has a meaningful social impact.
               </li>
-              <li>Utilized 3D assets, textures, visual effects created using Photoshop, GIMP, and Krita</li>
             </ul>
           </div>
-          <div class="view-project-button">
-            <a href="https://github.com/Bubbles-16/CMS395-Fall2023" class="project-button" style="background-color: #85A1FF;"target="_blank">View Project</a>
+          <div class="button-container">
+            <a href="https://github.com/JariP5/ASL" class="project-button" style="background-color: #85A1FF;"
+              target="_blank">View Project</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="project-info">
+            <strong>'voteSmart': Political Candidate Matching Web App</strong>
+            <ul>
+              <li>This project was aimed to help the users of this application (targeted toward U.S. citizens) to easily
+                connect with political candidates that appropriately fit their personal views. The user takes a
+                political alignment quiz that places them on the political scale. From here the user is provided with
+                information about the political candidates in their area, with emphasis on the candidates that their
+                views align with. I enjoyed building this application because it allowed me to further improve my skills
+                with Python and SQL, as well as explore the Flask framework.</li>
+            </ul>
+          </div>
+          <div class="button-container">
+            <a href="https://github.com/aakritishah/voteSmart" class="project-button" style="background-color: #85A1FF;"
+              target="_blank">View Project</a>
           </div>
         </li>
 
@@ -163,48 +200,22 @@
           <div class="project-info">
             <strong>Crochet Pattern Generator Application</strong>
             <ul>
-              <li>Built a web application to convert image inputs of patterns into crochet patterns</li>
-              <li>Employed convolutional neural networks implemented in Python and TensorFlow/Keras to analyze image
-                inputs
-              </li>
-              <li>Generated step-by-step text instructions for reproducing crochet versions of input images</li>
-              <li>Developed frontend interface allowing image uploads/crochet pattern visualization using React</li>
+              <li>This application generates a visual crochet pattern based on the type of stitch that was chosen. I
+                developed the frontend interface using basic HTML and CSS so that this could be accessed by my friends
+                as well. The user inputs either the predetermined size of their item, or chooses between small, medium,
+                large, or extra-large. Then the user pick whether they will be employing single stitches or double
+                stitches and then the number of stitches and an image of the pattern is printed. For the next version of
+                this application, I plan on incorporating neural networks and image inputs so that the application can
+                produce a pattern based on the image that the user provides.</li>
             </ul>
           </div>
-          <div class="view-project-button">
-            <a href="https://aakritishah.github.io/crochetpatterngenerator/" class="project-button" style="background-color: #85A1FF;"target="_blank">View Project</a>
+          <div class="button-container">
+            <a href="https://aakritishah.github.io/crochetpatterngenerator/" class="project-button"
+              style="background-color: #85A1FF;" target="_blank">View Project</a>
           </div>
         </li>
 
-        <li>
-          <div class="project-info">
-            <strong>‘ASLearning’ Sign Language Translation App</strong>
-            <ul>
-              <li>Created real-time mobile app translating sign language into text and speech</li>
-              <li>Trained machine learning model on sign language image dataset using TensorFlow</li>
-              <li>Built cross-platform application with Flutter framework along with integration to Firebase backend
-              </li>
-            </ul>
-          </div>
-          <div class="view-project-button">
-            <a href="https://github.com/JariP5/ASL" class="project-button" style="background-color: #85A1FF;"target="_blank">View Project</a>
-          </div>
-        </li>
 
-        <li>
-          <div class="project-info">
-            <strong>'voteSmart' Political Candidate Matching Web App</strong>
-            <ul>
-              <li>Developed a web platform to match users to political candidates based on policy stance survey</li>
-              <li>Built backend REST API with Flask framework and MySQL database</li>
-              <li>Implemented data visualization of candidate stances using D3.js</li>
-            </ul>
-          </div>
-          <div class="view-project-button">
-            <a href="https://github.com/aakritishah/voteSmart" class="project-button" style="background-color: #85A1FF;"target="_blank">View Project</a>
-          </div>
-        </li>
-      </ul>
     </section>
 
     <style>
@@ -249,18 +260,22 @@
     <section id="research">
       <h2 class="section-title">Research</h2>
       <ul class="project-list">
+
         <li>
           <div class="project-info">
             <strong>Adversarial Machine Learning in Autonomous Vehicles</strong>
             <ul>
-              <li>NSF Research Intern focused on adversarial ML approaches for self-driving cars</li>
-              <li>Simulated attacks against autonomous vehicle systems to gauge security vulnerabilities</li>
-              <li>Analyzed impact of perturbations/input manipulation on ML model behavior</li>
-              <li>Researched techniques to improve model robustness against potential exploits</li>
+              <li>From the summer of 2023, this National Science Foundation-sponsored research focused on evaluating the
+                robustness of autonomous vehicle systems against adversarial machine learning attacks. I experimented
+                with and simulated various models to determine how to enhance the systems, feedback mechanisms, and
+                interfaces between vehicles and human drivers. This project aligns with my interests in machine learning
+                and responsible AI development. Working under an NSF grant also provided me with an incredibly valuable
+                research experience and reaffirmed my goal of pursuing graduate school.</li>
             </ul>
           </div>
-          <div class="view-project-button">
-            <a href="https://arxiv.org/abs/2311.01478" class="project-button" style="background-color: #85A1FF;" target="_blank">View Paper</a>
+          <div class="button-container">
+            <a href="https://arxiv.org/abs/2311.01478" class="project-button" style="background-color: #85A1FF;"
+              target="_blank">View Paper</a>
           </div>
         </li>
 
@@ -268,29 +283,17 @@
           <div class="project-info">
             <strong>Evaluating AI Sentiment Analysis</strong>
             <ul>
-              <li>Honors thesis research using large language models for textual analysis</li>
-              <li>Manually labeled interview transcripts to create evaluation dataset</li>
-              <li>Compared model outputs from transformers like BERT against human labeled sentiments</li>
-              <li>Evaluated accuracy of sentiment classification across various sized datasets</li>
+              <li>My honors thesis project (poster and paper), started in January of 2023, leverages large language
+                models to enhance the sentiment analysis of textual data. By manually coding interview phrases from the
+                nonprofit organization Crave, my research group and I formed a foundation for the comparative analysis
+                against outputs from different AI models. This allowed us to evaluate the specific sentiment analysis
+                capabilities of various natural language processing systems, while also gaining valuable insights about
+                Crave that could be used to help their organization.</li>
             </ul>
           </div>
-          <div class="view-project-button">
-            <a href="https://github.com/aakritishah/AI-Sentiment-Analysis" class="project-button" style="background-color: #85A1FF;" target="_blank">View Project</a>
-          </div>
-        </li>
-
-        <li>
-          <div class="project-info">
-            <strong>Artificial Intelligence in Hiring Processes</strong>
-            <ul>
-              <li>Published study on the role of AI algorithms in recruitment and hiring</li>
-              <li>Scraped hiring data and job posting information to assemble analysis dataset</li>
-              <li>Identified ethical concerns around bias mitigation in automated hiring solutions</li>
-              <li>Provided recommendations for integrating AI-driven screening while preserving fairness</li>
-            </ul>
-          </div>
-          <div class="view-project-button">
-            <a href="link-to-code" class="project-button" style="background-color: #85A1FF;" target="_blank">View Project</a>
+          <div class="button-container">
+            <a href="https://github.com/aakritishah/AI-Sentiment-Analysis" class="project-button"
+              style="background-color: #85A1FF;" target="_blank">View Project</a>
           </div>
         </li>
       </ul>
@@ -332,6 +335,21 @@
       .project-button:hover {
         background-color: #7B8FFF;
       }
+
+      #work-experience>ul>li:not(:last-child) {
+        margin-bottom: 20px;
+        /* Adjust the value as needed for the desired gap */
+      }
+
+      #interests-hobbies>ul>li:not(:last-child) {
+        margin-bottom: 20px;
+        /* Adjust the value as needed for the desired gap */
+      }
+
+      #skills>ul>li:not(:last-child) {
+        margin-bottom: 20px;
+        /* Adjust the value as needed for the desired gap */
+      }
     </style>
 
 
@@ -341,133 +359,137 @@
         <li>
           <strong>Crocheting</strong>
           <ul>
-            <li>Love turning yarn into homemade creations like blankets and accessories</li>
-            <li>Sell some of my crocheted pieces online and gift items to friends and family</li>
-            <li>Enjoy following intricate crochet patterns and coming up with my own designs</li>
-            <img src="crochet.jpg" alt="crochet">
+            <li> I love turning yarn into things like blankets and things I can wear (sweaters, tops, and shrugs). </li>
+            <li> Using my free time while keeping my mind busy with following intricate crochet patterns and coming up
+              with my own designs is something I do to relax. </li>
           </ul>
         </li>
 
         <li>
           <strong>Baking</strong>
           <ul>
-            <li>Baking cakes, cookies, breads, and other tasty treats is incredibly satisfying</li>
-            <li>I gift many homemade baked goods but also indulge myself occasionally!</li>
-            <li>Requires following recipes closely and learning a range of techniques</li>
-            <img src="baking.jpg" alt="baking">
-          </ul>
+            <li>Baking cakes, cookies, and breads is another activity that I find incredibly fun to do in my free time.
+            </li>
+            <li>I love baking cakes for my loved ones on special occasions.</li>
+            <li>I sometimes follow recipes and other times I will mix recipes together to create something unique.</li>
+            <ul class="images-list">
+              <li>
+                <img src="cake.jpeg" alt="cake"
+                  style="width: 400px; height: auto; margin-top: 10px; margin-bottom: 10px;">
+              </li>
+              <li>
+                <img src="cake1.jpg" alt="cake1"
+                  style="width: 400px; height: auto; margin-top: 10px; margin-bottom: 10px;">
+              </li>
+            </ul>
         </li>
 
         <li>
           <strong>Film Photography</strong>
           <ul>
-            <li>Capture nature, cityscapes, and other scenes through 35mm film</li>
-            <li>Later develop the photos by hand in my home darkroom</li>
-            <li>Experimenting with photographic processing chemicals is engaging</li>
+            <li>My favorite hobby is film photography. I like to capturing nature, cityscapes, people, and other scenes
+              with by 35mm point-and-shoot cameras.</li>
+            <li>I later use my friend's own darkroom to develop the photos by hand.</li>
+            <li>Experimenting with different ways to processing and develop the photos is half of the fun.</li>
           </ul>
           <ul class="images-list">
             <li>
-              <img src="IMG_7617.jpg" alt="film" style="width: auto; height: 300px;">
+              <img src="IMG_7617.jpg" alt="film" style="width: auto; height: 350px; margin-top: 10px;">
             </li>
             <li>
-              <img src="IMG_7601.JPG" alt="film1" style="width: auto; height: 300px;">
+              <img src="IMG_7601.JPG" alt="film1" style="width: auto; height: 350px; margin-top: 10px;">
             </li>
             <li>
-              <img src="45310031.jpg" alt="film2" style="width: auto; height: 300px;">
+              <img src="45310031.jpg" alt="film2" style="width: auto; height: 350px; margin-top: 10px;">
             </li>
             <li>
-              <img src="IMG_7635.JPG" alt="film3" style="width: auto; height: 300px;">
+              <img src="IMG_7633.JPG" alt="film4" style="width: auto; height: 350px; margin-bottom: 10px;">
             </li>
             <li>
-              <img src="IMG_7633.JPG" alt="film4" style="width: auto; height: 300px;">
+              <img src="45310033.jpg" alt="film5" style="width: auto; height: 350px; margin-bottom: 10px;">
             </li>
             <li>
-              <img src="45310033.jpg" alt="film5" style="width: auto; height: 300px;">
-            </li>
-            <li>
-              <img src="45310029.jpg" alt="film6" style="width: auto; height: 300px;">
+              <img src="45310029.jpg" alt="film6" style="width: auto; height: 350px; margin-bottom: 10px;">
             </li>
           </ul>
         </li>
+
 
         <li>
           <strong>Vinyl Collection</strong>
           <ul>
-            <li>Have a growing vinyl collection spanning my favorite genres of jazz, funk, R&B and more</li>
-            <li>Enjoy crate digging at record stores to discover new music</li>
-            <li>Love the ritual of putting on a record and appreciating an entire album</li>
+            <li>I also have a growing vinyl collection with some of my favorite genres of music: R&B, rock, indie, and
+              pop.</li>
+            <li>Digging around at record stores on Sunday mornings to discover new music is something I really enjoy.
+            </li>
+            <li>Oftentimes, I will ting on a record and listen to whole albums while studying.</li>
             <img src="vinyl.jpg" alt="vinyl">
-          </ul>
-        </li>
-
-        <li>
-          <strong>Marvel Cinematic Universe</strong>
-          <ul>
-            <li>Have seen every MCU film multiple times and read many comic issues</li>
-            <li>Fascinated by the expansive storylines and character arcs</li>
-            <li>Impressed by the cohesion across such a vast fictional scope</li>
-            <img src="MCU.jpg" alt="MCU">
-          </ul>
-        </li>
-
-        <li>
-          <strong>Coffee</strong>
-          <ul>
-            <li>A bit of a coffee snob, always searching for new roasts and cafes</li>
-            <li>Drinking quality coffee makes nearly any activity more enjoyable</li>
-            <li>Appreciate learning subtle flavor notes that differentiate beans and brews</li>
-            <img src="coffee.jpg" alt="coffee">
           </ul>
         </li>
       </ul>
     </section>
 
     <section id="work-experience">
-      <h2 class="section-title">Work Experience</h2>
+      <h2 class="section-title">Experience</h2>
       <ul>
         <li>
           <strong>NSF Research Internship</strong>
           <ul>
-            <li>Focused on adversarial ML approaches for self-driving cars</li>
-            <li>Simulated attacks against autonomous vehicle systems to gauge security vulnerabilities</li>
-            <li>Analyzed impact of perturbations/input manipulation on ML model behavior</li>
-            <li>Researched techniques to improve model robustness against potential exploits</li>
+            <li>Focused on adversarial ML approaches for self-driving cars.</li>
+            <li>Simulated attacks against autonomous vehicle systems to gauge security vulnerabilities.</li>
+            <li>Analyzed impact of perturbations/input manipulation on ML model behavior.</li>
+            <li>Researched techniques to improve model robustness against potential exploits.</li>
           </ul>
         </li>
 
         <li>
           <strong>iD Tech Camps Instructor</strong>
           <ul>
-            <li>Instructed and mentored students in various technology-related subjects</li>
-            <li>Facilitated hands-on learning experiences, coding projects, and team activities</li>
-            <li>Provided guidance and support to students with varying skill levels</li>
-            <li>Contributed to a positive and collaborative learning environment</li>
+            <li>Instructed and mentored students in various technology-related subjects.</li>
+            <li>Facilitated hands-on learning experiences, coding projects, and team activities.</li>
+            <li>Provided guidance and support to students with varying skill levels.</li>
           </ul>
         </li>
 
         <li>
-          <strong>AutoPayPlus Internship</strong>
+          <strong>Autism in Motion, Volunteer</strong>
           <ul>
-            <li>Describe your responsibilities and achievements during the internship</li>
-            <li>Highlight any specific projects, skills gained, or contributions to the team</li>
-            <li>Include relevant details about the nature of the internship and its duration</li>
-            <!-- Add more details as needed -->
+            <li>Volunteering to help facilitate the integration and physical activity engagement of children with autism
+              to enhance their well-being and inclusion in the community.</li>
           </ul>
         </li>
-      </ul>
+
+
+        <li>
+          <strong>One for the World, President</strong>
+          <ul>
+            <li>Introduced and implemented One for the World, an organization that promotes effective altruism and
+              charitable giving.</li>
+            <li>Strategized plans to gain members and have as many as possible take the 1% pledge.</li>
+          </ul>
+        </li>
+
+        <li>
+          <strong>NSF Research Internship</strong>
+          <ul>
+            <li>Focused on adversarial ML approaches for self-driving cars.</li>
+            <li>Simulated attacks against autonomous vehicle systems to gauge security vulnerabilities.</li>
+            <li>Analyzed impact of perturbations/input manipulation on ML model behavior.</li>
+            <li>Researched techniques to improve model robustness against potential exploits.</li>
+          </ul>
+        </li>
     </section>
 
 
     <section id="skills">
       <h2 class="section-title">Skills</h2>
       <ul style="list-style-type:none; padding: 0; margin: 0;">
-        <li><strong>Programming:</strong> Python, SQL, Java, JavaScript, R, Go, Assembly (ARM), C, C++, XML, Dart, C#,
-          LaTeX</li>
+        <li><strong>Programming:</strong> Python, SQL, Java, JavaScript, R, Assembly (ARM), C, C++, XML, Dart, C#, LaTeX
+        </li>
         <li><strong>Frameworks:</strong> Node.js, pandas, Angular.js, Numpy, React, Flask, TensorFlow</li>
-        <li><strong>Other Skills:</strong> Validation and Processing of Data, Jupyter Notebook, Tableau, CSS and HTML,
-          AWS
-          (cloud computing), Teamwork and Collaboration, Critical Thinking, Web and Mobile App Development, CPU
-          Architecture</li>
+        <li><strong>Other Skills:</strong> Validation and Processing of Data, Jupyter Notebooks, MATLAB, Tableau, CSS
+          and HTML, AWS (cloud computing), Teamwork and Collaboration, Critical Thinking, Web and Mobile App
+          Development, CPU Architecture</li>
         <li><strong>Languages:</strong> English – Native, Hindi – Native, Spanish – Intermediate, and German – Beginner
         </li>
       </ul>
