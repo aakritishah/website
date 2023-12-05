@@ -124,8 +124,8 @@
   <nav>
     <a href="#home">Home</a>
     <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
     <a href="#research">Research</a>
+    <a href="#projects">Projects</a>
     <a href="#interests-hobbies">Interests & Hobbies</a>
     <a href="#work-experience">Experience</a>
     <a href="#skills">Skills</a>
@@ -146,7 +146,7 @@
 
     <section id="education">
       <h2 class="section-title">Education</h2>
-      <p>I will be graduating with honors from Rollins College (Winter Park, FL) with a bachelor's degree, double
+      <p>I will be graduating with honors from Rollins College (Winter Park, FL) with my Bachelor's degree, double
         majoring
         in Computer Science and Business Management. Through courses like Data Structures and Algorithms, Artificial
         Intelligence, Database Design, and Software Engineering, I gained in-depth knowledge of coding languages like
@@ -155,6 +155,103 @@
         boost both my technical skills while building business acumen.
       </p>
     </section>
+
+
+    <section id="research">
+      <h2 class="section-title">Research</h2>
+      <ul class="project-list">
+
+        <li>
+          <div class="project-info">
+            <strong>Adversarial Machine Learning in Autonomous Vehicles</strong>
+            <ul>
+              <li>From the summer of 2023, this National Science Foundation-sponsored research focused on evaluating the
+                robustness of autonomous vehicle systems against adversarial machine learning attacks. I experimented
+                with and simulated various models to determine how to enhance the systems, feedback mechanisms, and
+                interfaces between vehicles and human drivers. This project aligns with my interests in machine learning
+                and responsible AI development. Working under an NSF grant also provided me with an incredibly valuable
+                research experience and reaffirmed my goal of pursuing graduate school.</li>
+            </ul>
+          </div>
+          <div class="button-container">
+            <a href="https://arxiv.org/abs/2311.01478" class="project-button" style="background-color: #85A1FF;"
+              target="_blank">View Paper</a>
+          </div>
+        </li>
+
+        <li>
+          <div class="project-info">
+            <strong>Evaluating AI Sentiment Analysis</strong>
+            <ul>
+              <li>My honors thesis project (poster and paper), started in January of 2023, leverages large language
+                models to enhance the sentiment analysis of textual data. By manually coding interview phrases from the
+                nonprofit organization Crave, my research group and I formed a foundation for the comparative analysis
+                against outputs from different AI models. This allowed us to evaluate the specific sentiment analysis
+                capabilities of various natural language processing systems, while also gaining valuable insights about
+                Crave that could be used to help their organization.</li>
+            </ul>
+          </div>
+          <div class="button-container">
+            <a href="https://github.com/aakritishah/AI-Sentiment-Analysis" class="project-button"
+              style="background-color: #85A1FF;" target="_blank">View Project</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <style>
+      .project-list {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .project-list li {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1em;
+      }
+
+      .project-info {
+        width: 70%;
+      }
+
+      .view-project-button {
+        width: 30%;
+      }
+
+      .project-button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 0.5em;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .project-button:hover {
+        background-color: #7B8FFF;
+      }
+
+      #work-experience>ul>li:not(:last-child) {
+        margin-bottom: 20px;
+        /* Adjust the value as needed for the desired gap */
+      }
+
+      #interests-hobbies>ul>li:not(:last-child) {
+        margin-bottom: 20px;
+        /* Adjust the value as needed for the desired gap */
+      }
+
+      #skills>ul>li:not(:last-child) {
+        margin-bottom: 20px;
+        /* Adjust the value as needed for the desired gap */
+      }
+    </style>
+
 
     <section id="projects">
       <h2 class="section-title">Projects</h2>
@@ -255,103 +352,6 @@
         background-color: #7B8FFF;
       }
     </style>
-
-
-    <section id="research">
-      <h2 class="section-title">Research</h2>
-      <ul class="project-list">
-
-        <li>
-          <div class="project-info">
-            <strong>Adversarial Machine Learning in Autonomous Vehicles</strong>
-            <ul>
-              <li>From the summer of 2023, this National Science Foundation-sponsored research focused on evaluating the
-                robustness of autonomous vehicle systems against adversarial machine learning attacks. I experimented
-                with and simulated various models to determine how to enhance the systems, feedback mechanisms, and
-                interfaces between vehicles and human drivers. This project aligns with my interests in machine learning
-                and responsible AI development. Working under an NSF grant also provided me with an incredibly valuable
-                research experience and reaffirmed my goal of pursuing graduate school.</li>
-            </ul>
-          </div>
-          <div class="button-container">
-            <a href="https://arxiv.org/abs/2311.01478" class="project-button" style="background-color: #85A1FF;"
-              target="_blank">View Paper</a>
-          </div>
-        </li>
-
-        <li>
-          <div class="project-info">
-            <strong>Evaluating AI Sentiment Analysis</strong>
-            <ul>
-              <li>My honors thesis project (poster and paper), started in January of 2023, leverages large language
-                models to enhance the sentiment analysis of textual data. By manually coding interview phrases from the
-                nonprofit organization Crave, my research group and I formed a foundation for the comparative analysis
-                against outputs from different AI models. This allowed us to evaluate the specific sentiment analysis
-                capabilities of various natural language processing systems, while also gaining valuable insights about
-                Crave that could be used to help their organization.</li>
-            </ul>
-          </div>
-          <div class="button-container">
-            <a href="https://github.com/aakritishah/AI-Sentiment-Analysis" class="project-button"
-              style="background-color: #85A1FF;" target="_blank">View Project</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-
-    <style>
-      .project-list {
-        list-style: none;
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .project-list li {
-        display: flex;
-        justify-content: space-between;
-        margin-bottom: 1em;
-      }
-
-      .project-info {
-        width: 70%;
-      }
-
-      .view-project-button {
-        width: 30%;
-      }
-
-      .project-button {
-        display: block;
-        width: 100%;
-        text-align: center;
-        color: #ffffff;
-        text-decoration: none;
-        padding: 0.5em;
-        border-radius: 5px;
-        transition: background-color 0.3s ease;
-      }
-
-      .project-button:hover {
-        background-color: #7B8FFF;
-      }
-
-      #work-experience>ul>li:not(:last-child) {
-        margin-bottom: 20px;
-        /* Adjust the value as needed for the desired gap */
-      }
-
-      #interests-hobbies>ul>li:not(:last-child) {
-        margin-bottom: 20px;
-        /* Adjust the value as needed for the desired gap */
-      }
-
-      #skills>ul>li:not(:last-child) {
-        margin-bottom: 20px;
-        /* Adjust the value as needed for the desired gap */
-      }
-    </style>
-
 
     <section id="interests-hobbies">
       <h2 class="section-title">Interests & Hobbies</h2>
