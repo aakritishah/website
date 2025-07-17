@@ -8,7 +8,7 @@ body {
 }
 
 header {
-  background-color: #2E5A88;
+  background-color: #408068;
   padding: 1em;
   text-align: center;
   color: #EAE7DC;
@@ -16,7 +16,7 @@ header {
 }
 
 nav {
-  background-color: #111D4A;
+  background-color: #06402B;
   padding: 0.5em;
   text-align: center;
 }
@@ -30,7 +30,7 @@ nav a {
 }
 
 nav a:hover {
-  border-bottom: 2px solid #2E5A88;
+  border-bottom: 2px solid #4f3727;
 }
 
 section {
@@ -41,14 +41,14 @@ section {
 }
 
 h2 {
-  color: #111D4A;
+  color: #06402B;
 }
 
 .section-title {
-  border-bottom: 2px solid #111D4A;
+  border-bottom: 2px solid #06402B;
   padding-bottom: 0.5em;
   margin-bottom: 1em;
-  color: #12664F;
+  color: #06402B;
 }
 
 .two-column {
@@ -62,8 +62,8 @@ h2 {
 }
 
 footer {
-  background-color: #111D4A;
-  color: #9BB1FF;
+  background-color: #06402B;
+  color: #ffffff;
   text-align: center;
   padding: 1em;
   width: 100%;
@@ -139,7 +139,7 @@ ul.images-list img {
 }
 
 .project-button:hover {
-  background-color: #7B8FFF;
+  background-color: #ffffff;
 }
 
 .project-list {
@@ -175,7 +175,7 @@ ul.images-list img {
 }
 
 .project-button:hover {
-  background-color: #7B8FFF;
+  background-color: #ffffff;
 }
 
 #interests-hobbies>ul>li:not(:last-child) {
@@ -215,5 +215,5 @@ ul.images-list img {
 }
 
 .contact-button:hover {
-  background-color: #7B8FFF;
+  background-color: #ffffff;
 }
