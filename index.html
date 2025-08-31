@@ -11,13 +11,16 @@
   <header>
     <h1>Aakriti Shah</h1>
     <nav>
-      <ul>
-        <li><a href="#bio">Bio</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#technical">Technical Projects</a></li>
-        <li><a href="#cv-contact">CV & Contact</a></li>
-        <li><a href="#hobbies">Interests</a></li>
-      </ul>
+        <div class="hamburger" id="hamburger">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul id="nav-links">
+            <li><a href="#bio">Bio</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#technical">Technical Projects</a></li>
+            <li><a href="#cv-contact">CV & Contact</a></li>
+            <li><a href="#hobbies">Interests</a></li>
+        </ul>
     </nav>
   </header>
 
@@ -210,3 +213,13 @@
   </footer>
 </body>
 </html>
+
+
+<script>
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('show');
+});
+</script>

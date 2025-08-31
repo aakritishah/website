@@ -214,3 +214,43 @@ footer {
     color: #555; /* optional: lighter gray for a subtle look */
     margin-top: 5px;
 }
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1rem;
+  z-index: 1100;
+}
+
+/* Responsive nav */
+@media (max-width: 600px) {
+  nav ul {
+    display: none; /* hide links by default */
+    flex-direction: column;
+    background-color: #fff;
+    position: absolute;
+    top: 70px; /* below header */
+    right: 0;
+    width: 200px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+
+  nav ul.show {
+    display: flex;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
