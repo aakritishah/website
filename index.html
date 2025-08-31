@@ -1,274 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aakriti Shah - Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aakriti Shah – Computer Science Graduate Student</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-
   <header>
-    <h1 style="font-size: 36px;">Aakriti Shah</h1>
-    <p style="font-size: 18px;">Computer Science Graduate Student</p>
+    <h1>Aakriti Shah</h1>
+    <nav>
+      <ul>
+        <li><a href="#bio">Bio</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#technical">Technical Projects</a></li>
+        <li><a href="#cv-contact">CV & Contact</a></li>
+        <li><a href="#hobbies">Interests</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#education">Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#research">Research</a>
-    <a href="#interests-hobbies">Interests & Hobbies</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <main>
+    <section id="bio">
+      <h2>Bio</h2>
+      <p>Hi! I am a Computer Science Master's student at USC with a Bachelor's in Computer Science and Business Management. My research focuses on machine learning for social good, with interests in <strong>Natural Language Processing (LLMs)</strong>, <strong>Computer Vision</strong>, and <strong>Healthcare AI</strong>. My research experience lies in unlearning in LLMs, digital pathology cancer detection, deep learning, computer vision, and adversarial ML.</p>
+      <p><a href="CV.pdf" download target="_blank">Click here for my CV</a>. My contact details are below.</p>
+    </section>
 
-  <div class="two-column">
-
-    <!------------------------------------------------------------------------ Home ------------------------------------------------------------------------>
-
-    <section id="home">
-      <h2>Home</h2>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Welcome to my portfolio! Hi, my name is Aakriti and I am a current computer science Master's student at the University of Southern California Viterbi School of Engineering. I have a
-        Bachelor's Degree in <b>Computer Science and Business Management</b> and a passion for topics like
-        <b>Machine Learning, Data Analytics, and Natural Language Processing</b>. I have worked on projects
-        involving technologies like deep learning and have research experience from an NSF internship focused on adversarial
-        machine learning. My passion lies in using technology for social good and am drawn to leveraging my skills to
-        cultivate a better society.</p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;Here is easy access to download my detailed resume. Please feel free to click the
-        button to review my
-        qualifications, experiences, and achievements in more depth. If you want to contact me, please scroll to the
-        bottom of this page for my contact information.</p>
-      <div class="button-container">
-        <a href="https://drive.google.com/file/d/1pVRC4x7X9k8Tc9FA1bTUd4mUFlcNvTNl/view?usp=sharing"
-          class="project-button" style="background-color: #4f3727; width: 125px; margin: 0 auto;" target="_blank">View
-          Resume</a>
+<section id="research">
+  <h2>Research</h2>
+  <ul>
+    <li class="project-item">
+      <div class="project-desc">
+        <strong>Digital Pathology (AIMed Lab)</strong>: Prostate cancer detection via tissue compartment segmentation (UNet, nnUNet, UNI). Achieved ~0.845 Dice score.
       </div>
-    </section>
+      <div class="project-links">
+        <a href="https://drive.google.com/file/d/1w_dvnvz6B4X0A60C30StSJNYNaxDKtmU/view" target="_blank" class="btn">Abstract</a>
+      </div>
+    </li>
+    <li class="project-item">
+      <div class="project-desc">
+        <strong>Unlearning in LLMs (ARKAI Lab)</strong>: Studying targeted unlearning in LLMs using Harry Potter–unlearned models, applying ACT theory from psychology.
+      </div>
+      <div class="project-links">
+        <!-- empty div keeps right column aligned -->
+      </div>
+    </li>
+    <li class="project-item">
+      <div class="project-desc">
+        <strong>Healthcare AI</strong>: Diabetic Retinopathy detection with preprocessing (CLAHE, Gaussian Blur, MGA-CSG) to improve retinal fundus image quality.
+      </div>
+      <div class="project-links">
+        <!-- empty div -->
+      </div>
+    </li>
+    <li class="project-item">
+      <div class="project-desc">
+        <strong>Conversational Hinglish Chatbot</strong>: Built with multilingual and synthetic datasets, fine-tuned LLMs for open-domain dialogue.
+      </div>
+      <div class="project-links">
+        <a href="https://arxiv.org/pdf/2504.19070" target="_blank" class="btn">Paper</a>
+        <a href="https://github.com/sakshisingh0598/Sample-Efficient_LM" target="_blank" class="btn">Project</a>
+      </div>
+    </li>
+    <li class="project-item">
+      <div class="project-desc">
+        <strong>Honors Thesis</strong>: Compared human vs. LLM sentiment analysis on nonprofit interview data in nuanced contexts.
+      </div>
+      <div class="project-links">
+        <a href="https://scholarship.rollins.edu/honors/218/" target="_blank" class="btn">Paper</a>
+        <a href="https://github.com/aakritishah/AI-Sentiment-Analysis" target="_blank" class="btn">Project</a>
+      </div>
+    </li>
+    <li class="project-item">
+      <div class="project-desc">
+        <strong>NSF Internship</strong>: Investigated adversarial robustness in ML for autonomous driving.
+      </div>
+      <div class="project-links">
+        <a href="https://arxiv.org/pdf/2311.01478" target="_blank" class="btn">Paper</a>
+      </div>
+    </li>
+  </ul>
+</section>
 
 
-    <!------------------------------------------------------------------------ Education ------------------------------------------------------------------------>
 
-    <section id="education">
-      <h2 class="section-title">Education</h2>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;I graduated in December of 2023 with honors from Rollins College (Winter Park, FL) with
-        my Bachelor's degree,
-        double majoring in Computer Science and Business Management. Through courses like Data Structures and
-        Algorithms, Database Design, and Software Engineering, I gained in-depth knowledge of coding languages like
-        Python, Java, C, and Assembly, as well as frameworks like TensorFlow, pandas, and Flask. My interdisciplinary
-        studies allowed me to boost my technical skills while building creativity and time management from my
-        business background.
+    <section id="technical">
+  <h2>Technical Projects</h2>
+  <ul>
+    <li class="project-item">
+      <div class="project-desc">
+        <strong>voteSmarter</strong>: Civic engagement mobile app for voter education and candidate matching.
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/aakritishah/voteSmarter" target="_blank" class="btn">Project</a>
+      </div>
+    </li>
+    <li class="project-item">
+      <div class="project-desc">
+        <strong>ASLearning</strong>: Accessibility app using object detection to assist communication for the hearing-impaired.
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/aakritishah/ASLearning" target="_blank" class="btn">Project</a>
+      </div>
+    </li>
+    <li class="project-item">
+      <div class="project-desc">
+        <strong>AI Sentiment Analysis</strong>: Comparative analysis of human-coded vs. LLM sentiment output.
+      </div>
+      <div class="project-links">
+        <a href="https://github.com/aakritishah/AI-Sentiment-Analysis" target="_blank" class="btn">Project</a>
+      </div>
+    </li>
+  </ul>
+</section>
+
+
+
+<section id="cv-contact">
+  <h2>CV & Contact</h2>
+  <div class="cv-contact-container">
+    <div class="contact-info">
+      <div class="links">
+        <a href="CV.pdf" target="_blank" class="btn">CV</a>
+      </div>
+      <br>
+      <p>
+        <a href="mailto:u2aakriti@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> u2aakriti@gmail.com</a>
+        <a href="mailto:shahaakr@usc.edu" target="_blank"><i class="fa-regular fa-envelope"></i> shahaakr@usc.edu</a>
       </p>
-      <p>&nbsp;&nbsp;&nbsp;&nbsp;I am currently a <b>Master's student at the USC Viterbi School of Engineering</b>.
+      <br>
+      <p>
+        <a href="https://scholar.google.com/citations?user=HEZZbhUAAAAJ&hl=en&oi=ao" target="_blank">
+          <i class="fa-solid fa-graduation-cap"></i> Google Scholar
+        </a>
+        <a href="https://www.linkedin.com/in/aakriti-shah-/" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="https://github.com/aakritishah" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
       </p>
-    </section>
-
-    <!------------------------------------------------------------------------ Projects ------------------------------------------------------------------------>
-
-    <section id="projects">
-      <h2 class="section-title">Projects</h2>
-      <ul class="project-list">
-        <li>
-          <div class="project-info">
-            <strong>'voteSmarter': All-Inclusive Voting Information Mobile App</strong>
-            <ul>
-              <li>Although this application's name sounds a lot like its predecessor, it is way more capable. I developed to be a step above 'voteSmart': easier to navigate, more practical to use, and better UI.
-                This mobile app's goal is to educate the user on 6 main things about voting: when and where to vote, who are the candidates running, what are the candidate's stances, registration timelines, and ballot information. I really loved building this because it allowed me to build my skills
-                with Android and iOS development, as well as explore several built-in Dart functionalities.</li>
-            </ul>
-          </div>
-          <div class="button-container">
-            <a href="https://github.com/aakritishah/voteSmarter" class="project-button"
-              style="background-color: #4f3727;" target="_blank">View Project</a>
-          </div>
-        </li>
-
-        <li>
-          <div class="project-info">
-            <strong>‘ASLearning’: Sign Language Translation App</strong>
-            <ul>
-              <li>This group project was created to bridge the communication gap between hearing-impaired individuals
-                and English speakers. It utilizes TensorFlow, Flutter, and Firebase to develop a mobile app that
-                implements deep learning and image recognition to facilitate communication. The goal is to create an
-                accessible and inclusive tool for those with hearing impairments to more easily understand English
-                speech. This was such an enjoyable project to work on because it allowed me to gain skills in machine
-                learning, while simultaneously creating technology that has a meaningful social impact.
-              </li>
-            </ul>
-          </div>
-          <div class="button-container">
-            <a href="https://github.com/aakritishah/ASLearning" class="project-button"
-              style="background-color: #4f3727;" target="_blank">View Project</a>
-          </div>
-        </li>
-
-        <li>
-          <div class="project-info">
-            <strong>'voteSmart': Political Candidate Matching Web App</strong>
-            <ul>
-              <li>This project was aimed to help the users of this application (targeted toward U.S. citizens) to easily
-                connect with political candidates that appropriately fit their personal views. The user takes a
-                political alignment quiz that places them on the political scale. From here the user is provided with
-                information about the political candidates in their area, with emphasis on the candidates that their
-                views align with. I enjoyed building this application because it allowed me to further improve my skills
-                with Python and SQL, as well as explore the Flask framework.</li>
-            </ul>
-          </div>
-          <div class="button-container">
-            <a href="https://github.com/aakritishah/voteSmart" class="project-button" style="background-color: #4f3727;"
-              target="_blank">View Project</a>
-          </div>
-        </li>
-    </section>
-
-    <!------------------------------------------------------------------------ Research ------------------------------------------------------------------------>
-
-    <section id="research">
-      <h2 class="section-title">Research</h2>
-      <ul class="project-list">
-
-        <li>
-          <div class="project-info">
-            <strong>Adversarial Machine Learning in Autonomous Vehicles</strong>
-            <ul>
-              <li>From the summer of 2023, this National Science Foundation-sponsored research focused on evaluating the
-                robustness of autonomous vehicle systems against adversarial machine learning attacks. I experimented
-                with and simulated various models to determine how to enhance the systems, feedback mechanisms, and
-                interfaces between vehicles and human drivers. Working under an NSF grant also provided me with an incredibly valuable
-                research experience and reaffirmed my goal of pursuing graduate school.</li>
-            </ul>
-          </div>
-          <div class="button-container">
-            <a href="https://arxiv.org/abs/2311.01478" class="project-button" style="background-color: #4f3727;"
-              target="_blank">View Paper</a>
-          </div>
-        </li>
-
-        <li>
-          <div class="project-info">
-            <strong>Evaluating AI Sentiment Analysis</strong>
-            <ul>
-              <li>My honors thesis project (poster and paper), started in January of 2023, leverages large language
-                models to enhance the sentiment analysis of textual data. By manually coding interview phrases from the
-                nonprofit organization Crave, my research group and I formed a foundation for the comparative analysis
-                against outputs from different AI models. This allowed us to evaluate the specific sentiment analysis
-                capabilities of various natural language processing systems, while also gaining valuable insights about
-                Crave that could be used to help their organization. This project aligns with my interests in data, LLMs,
-                and NLP, all while cultivating and using data responsibly.</li>
-            </ul>
-          </div>
-          <div class="button-container">
-            <a href="https://github.com/aakritishah/AI-Sentiment-Analysis" class="project-button"
-              style="background-color: #4f3727;" target="_blank">View Project</a>
-          </div>
-        </li>
-      </ul>
-    </section>
-  </div>
-
-
-  <!------------------------------------------------------------------------ Interests ------------------------------------------------------------------------>
-  <div class="one-column">
-    <section id="interests-hobbies">
-      <h2 class="section-title">Interests & Hobbies</h2>
-      <ul>
-        <strong>Knitting, Crocheting, and Sewing</strong>
-        <ul>
-          <li> I love turning yarn into things like blankets, beanies, scarves, and socks. </li>
-          <li> I love clothes and shopping for unique pieces in general, and this inspires me to create my own
-            personalized pieces.</li>
-          <li>Candidly, knitting, crocheting, and sewing is a tool I use to be creative while also keeping my mind busy with
-            following complicated patterns and coming up with my own designs.</li>
-        </ul>
-
-        <p><br></p>
-        <strong>Baking</strong>
-        <ul>
-          <li>Baking cakes, cookies, and breads is another activity that I find incredibly fun to do in my free time.
-          </li>
-          <li>I love baking cakes for my friends and family on special occasions.</li>
-          <li>I sometimes follow recipes and other times I will mix recipes together to create something unique and
-            different.<br></li>
-          <p><br></p>
-          <ul class="images-list">
-            <li>
-              <img src="cake.jpeg" alt="cake"
-                style="width: 400px; height: auto; margin-top: 10px; margin-bottom: 10px;">
-            </li>
-            <li>
-              <img src="cake1.jpg" alt="cake1"
-                style="width: 400px; height: auto; margin-top: 10px; margin-bottom: 10px;">
-            </li>
-          </ul>
-
-          <p><br></p>
-          <strong>Film Photography</strong>
-          <ul>
-            <li>By far, my favorite hobby is film photography. I love capturing nature, cityscapes, animals, and other
-              scenes
-              with my 35mm point-and-shoot cameras (Olympus MJU and Cannon Sure Shot Telemax).</li>
-            <li>Experimenting with different exposures and ways of taking photos is a ton of fun.</li>
-            <p><br></p>
-          </ul>
-          <ul class="images-list">
-            <li>
-              <img src="IMG_7617.jpg" alt="film" style="width: auto; height: 350px; margin-top: 10px;">
-            </li>
-            <li>
-              <img src="IMG_7601.JPG" alt="film1" style="width: auto; height: 350px; margin-top: 10px;">
-            </li>
-            <li>
-              <img src="45310031.jpg" alt="film2" style="width: auto; height: 350px; margin-top: 10px;">
-            </li>
-            <li>
-              <img src="IMG_7633.JPG" alt="film4" style="width: auto; height: 350px; margin-bottom: 10px;">
-            </li>
-            <li>
-              <img src="45310033.jpg" alt="film5" style="width: auto; height: 350px; margin-bottom: 10px;">
-            </li>
-            <li>
-              <img src="45310029.jpg" alt="film6" style="width: auto; height: 350px; margin-bottom: 10px;">
-            </li>
-          </ul>
-
-          <p><br></p>
-          <strong>Vinyl Collection</strong>
-          <ul>
-            <li>I also have a growing vinyl collection with some of my favorite genres of music: R&B, rock, indie, and
-              pop.</li>
-            <li>I really enjoy digging around different record stores in different cities when I travel, or when I am
-              home, to discover new music.
-            </li>
-            <li>I will often put on a record and listen to whole albums while baking, knitting, or studying.</li>
-            <!-- <img src="vinyl.jpg" alt="vinyl" style="width: auto; height: 350px; margin-top: 10px;"> -->
-          </ul>
-        </ul>
-    </section>
-
-
-    <!------------------------------------------------------------------------ Contact ------------------------------------------------------------------------>
-    <div style="display: flex; justify-content: center;">
-      <section id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-content">
-          <img src="me.jpg" alt="Contact Image" class="contact-image">
-          <div class="contact-buttons">
-            <a href="mailto:u2aakriti@gmail.com" class="contact-button" style="background-color: #4f3727;">Email</a>
-            <a href="https://www.linkedin.com/in/aakriti-shah-/" target="_blank" rel="noopener noreferrer"
-              class="contact-button" style="background-color: #4f3727;">LinkedIn</a>
-            <a href="https://github.com/aakritishah" target="_blank" rel="noopener noreferrer" class="contact-button"
-              style="background-color: #4f3727;">GitHub</a>
-          </div>
-        </div>
-      </section>
+    </div>
+    <div class="contact-pic">
+      <img src="me.jpg" alt="Aakriti Shah" />
     </div>
   </div>
+</section>
+
+
+
+
+    <section id="hobbies">
+        <h2>Interests & Hobbies</h2>
+        <p>Beyond research, I enjoy community outreach, rowing, baking, knitting, crocheting, sewing, film photography, and growing my vinyl collection. Below are some pics of my favorites:</p>
+        <br>
+        <h3>Baking</h3>
+        </ul>
+        <div class="images-list">
+            <img src="cake.jpeg" alt="cake" style="width: 100%; max-width: 200px; height: auto; margin: 10px 0;">
+            <img src="cake1.jpg" alt="cake1" style="width: 100%; max-width: 200px; height: auto; margin: 10px 0;">
+        </div>
+            <br>
+            <h3>Film Photography</h3>
+            <ul>
+                <li>I love traveling and capturing nature, cityscapes, and animals with my 35mm point-and-shoot cameras (Olympus MJU and Canon Sure Shot Telemax).</li>
+            </ul>
+            <div class="images-list">
+        <figure style="display: inline-block; margin: 10px; text-align: center;">
+            <img src="45310033.jpg" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
+            <figcaption>Mar. 18, 2023 - Colares, Portugal</figcaption>
+        </figure>  
+        
+        <figure style="display: inline-block; margin: 10px; text-align: center;">
+            <img src="IMG_7633.JPG" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
+            <figcaption>Sept. 16, 2022 - New York City</figcaption>
+        </figure>
+
+        <figure style="display: inline-block; margin: 10px; text-align: center;">
+            <img src="45310029.jpg" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
+            <figcaption>Mar. 20, 2023 - Cascais, Portugal</figcaption>
+        </figure>
+
+        <figure style="display: inline-block; margin: 10px; text-align: center;">
+            <img src="IMG_7617.jpg" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
+            <figcaption>Sept. 15, 2022 - New York City</figcaption>
+        </figure>
+
+        <figure style="display: inline-block; margin: 10px; text-align: center;">
+            <img src="45310031.jpg" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
+            <figcaption>Mar. 18, 2023 - Colares, Portugal</figcaption>
+        </figure>
+
+        <figure style="display: inline-block; margin: 10px; text-align: center;">
+            <img src="IMG_7601.JPG" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
+            <figcaption>Sept. 16, 2022 - New York City</figcaption>
+        </figure>
+        
+        
+    </div>
+
+    </section>
+
+  </main>
 
   <footer>
-    <p> &copy; 2024 Aakriti Shah | Designed With &lt;3 </p>
+    <p>Updated in August 2025 – Aakriti Shah</p>
   </footer>
-
 </body>
-
 </html>
