@@ -208,3 +208,9 @@ footer {
   margin-right: 0.3rem;
 }
 
+.images-list figcaption {
+    font-family: 'Courier New', Courier, monospace; /* Replace with your film date font */
+    font-size: 0.8em;
+    color: #555; /* optional: lighter gray for a subtle look */
+    margin-top: 5px;
+}
