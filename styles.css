@@ -260,12 +260,12 @@ footer {
   display: flex;
   flex-wrap: wrap;           /* keeps them side by side, but wraps if screen is too small */
   justify-content: center;   /* center them horizontally */
-  gap: 30px;                 /* space between figures */
+  gap: 50px;                 /* space between figures */
   margin: 20px 0;
 }
 
 .baking-images figure {
-  max-width: 200px;          /* match your image size */
+  max-width: 225px;          /* match your image size */
   text-align: center;        /* captions centered under image */
 }
 
