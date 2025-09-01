@@ -254,3 +254,23 @@ footer {
     display: block;
   }
 }
+
+
+.baking-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px; /* extra spacing only here */
+  margin: 20px 0;
+}
+
+.baking-images figure {
+  text-align: center;
+}
+
+.baking-images figcaption {
+  font-family: 'Courier New', Courier, monospace; /* your film font */
+  font-size: 0.8em;
+  color: #555;
+  margin-top: 5px;
+}
