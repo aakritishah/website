@@ -258,19 +258,28 @@ footer {
 
 .baking-images {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px; /* extra spacing only here */
+  flex-wrap: wrap;           /* keeps them side by side, but wraps if screen is too small */
+  justify-content: center;   /* center them horizontally */
+  gap: 30px;                 /* space between figures */
   margin: 20px 0;
 }
 
 .baking-images figure {
-  text-align: center;
+  max-width: 200px;          /* match your image size */
+  text-align: center;        /* captions centered under image */
+}
+
+.baking-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .baking-images figcaption {
-  font-family: 'Courier New', Courier, monospace; /* your film font */
+  font-family: 'Courier New', Courier, monospace; /* film style font */
   font-size: 0.8em;
   color: #555;
-  margin-top: 5px;
+  margin-top: 8px;
+  line-height: 1.3;          /* allows multiline captions */
+  word-wrap: break-word;     /* ensures long words wrap */
 }
