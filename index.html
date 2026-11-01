@@ -4,239 +4,338 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aakriti Shah</title>
+  <meta name="description" content="Aakriti Shah: healthcare AI, computational pathology, and biomedical data.">
+  <script>
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (dark) document.documentElement.setAttribute('data-theme', 'dark');
+      } catch (e) {}
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" href="graduate-hat.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <header>
     <h1>Aakriti Shah</h1>
+    <p class="tagline">Healthcare AI &middot; computational pathology &middot; genomic and clinical data</p>
     <nav>
-        <div class="hamburger" id="hamburger">
+        <div class="hamburger" id="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
             <i class="fas fa-bars"></i>
         </div>
         <ul id="nav-links">
             <li><a href="#bio">Bio</a></li>
             <li><a href="#research">Research</a></li>
-            <li><a href="#technical">Technical Projects</a></li>
-            <li><a href="#cv-contact">CV & Contact</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#technical">Projects</a></li>
+            <li><a href="#cv-contact">CV &amp; Contact</a></li>
             <li><a href="#hobbies">Interests</a></li>
         </ul>
     </nav>
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <i class="fas fa-moon" id="theme-icon"></i>
+    </button>
   </header>
 
   <main>
     <section id="bio">
       <h2>Bio</h2>
-      <p>Hi! I am a Computer Science Master's student at USC with a Bachelor's in Computer Science and Business Management. My research focuses on machine learning for social good, with interests in <strong>Natural Language Processing (LLMs)</strong>, <strong>Computer Vision</strong>, and <strong>Healthcare AI</strong>. My research experience lies in unlearning in LLMs, digital pathology cancer detection, deep learning, computer vision, and adversarial ML.</p>
-      <p><a href="CV.pdf" target="_blank">Click here to look at my CV.</a></p>
+      <p>Hi! I'm a graduate student working on machine learning for healthcare and biomedical data. I recently completed my MS in Computer Science at USC and am finishing an MS in Computational Biomedicine &amp; Biotechnology at the University of Pittsburgh (expected May 2027). I hold a BA in Computer Science and Business Management (Honors) from Rollins College.</p>
+      <p>My research centers on <strong>Healthcare AI</strong>: I have hands-on experience in <strong>medical imaging and digital pathology</strong> (prostate cancer segmentation and grading), and I'm now expanding into <strong>genomic and sequence data</strong>, including how protein language models can help us understand viral evolution and antibody neutralization. I'm also interested in trustworthy ML, including <strong>unlearning and privacy in LLMs</strong>.</p>
+      <p><a href="CV.pdf" target="_blank">Take a look at my CV.</a></p>
     </section>
 
-<section id="research">
-  <h2>Research</h2>
-  <ul>
-    <li class="project-item">
-      <div class="project-desc">
-        <strong>Digital Pathology Prostate Cancer (AIMed Lab)</strong>: Prostate cancer detection via tissue compartment segmentation (UNet, nnUNet, UNI). Current Dice score is ~0.845. 
-        <br>
-        Introducing a method to reincorporate lumen in a postprocessing step and evaluating deep learning vs. foundational segmentation approaches.
-      </div>
-      <div class="project-links">
-        <a href="https://drive.google.com/file/d/1w_dvnvz6B4X0A60C30StSJNYNaxDKtmU/view" target="_blank" class="btn">Abstract</a>
-        <a href="https://github.com/aakritishah/tissueCompartmentSegmentation" target="_blank" class="btn">Project</a>
-      </div>
-    </li>
-    <br>
-    <li class="project-item">
-      <div class="project-desc">
-        <strong>Unlearning in LLMs (ARKAI Lab)</strong>: Studying targeted unlearning in LLMs (Llama-2-7b) using Harry Potter–unlearned models, applying ACT theory from psychology. 
-        <br>
-        Exploring how forgetting in LLMs parallels entanglement of human memory, testing adversarial and persuasive prompting techniques.
-      </div>
-      <div class="project-links">
-        <a href="https://arxiv.org/abs/2510.25732" target="_blank" class="btn">Paper</a>
-        <a href="https://github.com/aakritishah/LLMunlearning" target="_blank" class="btn">Project</a>
-      </div>
-    </li>
-    <br>
-    <li class="project-item">
-      <div class="project-desc">
-        <strong>Diabetic Retinopathy Detection</strong>: Diabetic Retinopathy detection with preprocessing (CLAHE, Gaussian Blur, MGA-CSG) to improve retinal fundus image quality.
-        <br>
-        Focused on combating poor dataset quality by optimizing preprocessing for early detection and improving model robustness.
-      </div>
-      <div class="project-links">
-        <!-- empty div -->
-      </div>
-    </li>
-    <br>
-    <li class="project-item">
-      <div class="project-desc">
-        <strong>Conversational Hinglish Chatbot</strong>: Built with multilingual and synthetic datasets, fine-tuned LLMs for open-domain dialogue. 
-        <br>
-        Curated and augmented code-switched data, applied instruction-tuning, and evaluated model outputs on syntactic and semantic quality.
-      </div>
-      <div class="project-links">
-        <a href="https://arxiv.org/pdf/2504.19070" target="_blank" class="btn">Paper</a>
-        <a href="https://github.com/sakshisingh0598/Sample-Efficient_LM" target="_blank" class="btn">Project</a>
-      </div>
-    </li>
-    <br>
-    <li class="project-item">
-      <div class="project-desc">
-        <strong>Evaluating AI Sentiment Analysis</strong>: Compared human vs. LLM sentiment analysis on nonprofit interview data in nuanced contexts. 
-        <br>
-        Manually annotated interview data and explored implications of LLM sentiment performance in low-resource and emotionally nuanced domains.
-      </div>
-      <div class="project-links">
-        <a href="https://scholarship.rollins.edu/honors/218/" target="_blank" class="btn">Paper</a>
-        <a href="https://github.com/aakritishah/AI-Sentiment-Analysis" target="_blank" class="btn">Project</a>
-      </div>
-    </li>
-    <br>
-    <li class="project-item">
-      <div class="project-desc">
-        <strong>Adversarial Attacks in Autonomous Driving Systems</strong>: Investigated adversarial robustness in ML for autonomous driving. 
-        <br>
-        Analyzed transfer learning and robustness across model architectures; participated in weekly cross-disciplinary research ethics seminars.
-      </div>
-      <div class="project-links">
-        <a href="https://arxiv.org/pdf/2311.01478" target="_blank" class="btn">Paper</a>
-      </div>
-    </li>
-  </ul>
-</section>
+    <section id="research">
+      <h2>Research</h2>
+      <ul>
+        <li class="project-item">
+          <div class="project-desc">
+            <span class="meta">Barton Lab, University of Pittsburgh &middot; Sept. 2026 &ndash; present</span>
+            <strong>Protein Language Models for HIV Antibody Neutralization</strong><span class="tag">New</span>
+            <br>
+            Testing whether ESM-2 embeddings of HIV-1 Env sequences improve a published antibody-neutralization predictor over its PCA features, on a CATNAP matrix of 806 antibodies &times; ~1,150 viruses. Reproduced the original model (Pearson R = 0.74) and built a paired evaluation with hold-outs for unseen viruses and subtypes, plus a random-projection control.
+          </div>
+          <div class="project-links"></div>
+        </li>
 
+        <li class="project-item">
+          <div class="project-desc">
+            <span class="meta">AIMed Lab &middot; May 2025 &ndash; present</span>
+            <strong>Digital Pathology: Prostate Cancer</strong>
+            <br>
+            Prostate cancer detection through tissue compartment and Gleason pattern segmentation in H&amp;E whole slide images, using UNet, nnUNet, and the UNI foundation model. A new postprocessing step that reincorporates lumen brings the average Dice score to 0.895. Now extending to Gleason pattern grading (patterns 3, 4, 5) to assess cancer aggressiveness.
+          </div>
+          <div class="project-links">
+            <a href="https://drive.google.com/file/d/1w_dvnvz6B4X0A60C30StSJNYNaxDKtmU/view" target="_blank" class="btn">Abstract</a>
+            <a href="https://github.com/aakritishah/tissueCompartmentSegmentation" target="_blank" class="btn">Project</a>
+          </div>
+        </li>
 
+        <li class="project-item">
+          <div class="project-desc">
+            <strong>Diabetic Retinopathy Detection</strong>
+            <br>
+            Preprocessing (CLAHE, Gaussian blur, MGA-CSG) to improve retinal fundus image quality, targeting poor dataset quality for earlier detection and more robust models.
+          </div>
+          <div class="project-links"></div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-desc">
+            <span class="meta">USC &times; Defense Health Agency &middot; Jan. &ndash; May 2025</span>
+            <strong>AI for Battlefield TBI Care</strong>
+            <br>
+            Project manager and developer on a student team building a three-part system with a Walter Reed clinician: an AI triage app, a drone resupply optimizer, and a portable eddy current hemorrhage detector, aimed at reducing preventable traumatic brain injury deaths.
+          </div>
+          <div class="project-links"></div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-desc">
+            <span class="meta">ARKAI Lab &middot; May 2025 &ndash; present</span>
+            <strong>Unlearning in LLMs</strong>
+            <br>
+            Targeted unlearning as a privacy-preserving mechanism, using Harry Potter&ndash;unlearned Llama-2-7b models. Examines how knowledge entanglement shapes what leaks after unlearning, and tests resistance to adversarial extraction and membership inference. Submitted to EACL 2026.
+          </div>
+          <div class="project-links">
+            <a href="https://arxiv.org/abs/2510.25732" target="_blank" class="btn">Paper</a>
+            <a href="https://github.com/aakritishah/LLMunlearning" target="_blank" class="btn">Project</a>
+          </div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-desc">
+            <span class="meta">NSF IRES, Northumbria University (UK) &middot; May &ndash; July 2026</span>
+            <strong>Citizen-Centered AI</strong>
+            <br>
+            Human-centered AI research on identity, privacy, security, and information, in an international and interdisciplinary team of US and UK researchers.
+          </div>
+          <div class="project-links"></div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-desc">
+            <span class="meta">USC &middot; Aug. &ndash; Dec. 2025</span>
+            <strong>Unlearning Political Information in LLMs</strong>
+            <br>
+            Applied unlearning methods (DPO, refusal tuning, prompting) to Llama-3.1-8B and Mistral-7B, then measured shifts in "political orientation" with political compass and social psychology questionnaires.
+          </div>
+          <div class="project-links"></div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-desc">
+            <strong>Conversational Hinglish Chatbot</strong>
+            <br>
+            Fine-tuned LLMs for open-domain dialogue using multilingual and synthetic datasets; curated code-switched data, applied instruction-tuning, and evaluated syntactic and semantic quality.
+          </div>
+          <div class="project-links">
+            <a href="https://arxiv.org/pdf/2504.19070" target="_blank" class="btn">Paper</a>
+            <a href="https://github.com/sakshisingh0598/Sample-Efficient_LM" target="_blank" class="btn">Project</a>
+          </div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-desc">
+            <span class="meta">Honors Thesis, Rollins College &middot; 2023</span>
+            <strong>Evaluating AI Sentiment Analysis</strong>
+            <br>
+            Compared human and LLM sentiment analysis on nonprofit interview data, exploring LLM limits in low-resource and emotionally nuanced settings.
+          </div>
+          <div class="project-links">
+            <a href="https://scholarship.rollins.edu/honors/218/" target="_blank" class="btn">Paper</a>
+            <a href="https://github.com/aakritishah/AI-Sentiment-Analysis" target="_blank" class="btn">Project</a>
+          </div>
+        </li>
+
+        <li class="project-item">
+          <div class="project-desc">
+            <span class="meta">NSF REU, Penn State &middot; Summer 2023</span>
+            <strong>Adversarial Attacks in Autonomous Driving Systems</strong>
+            <br>
+            Investigated adversarial robustness of ML models for autonomous driving, analyzing transfer learning and robustness across architectures.
+          </div>
+          <div class="project-links">
+            <a href="https://arxiv.org/pdf/2311.01478" target="_blank" class="btn">Paper</a>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="publications">
+      <h2>Publications &amp; Presentations</h2>
+      <ul class="pub-list">
+        <li>
+          "Automated gleason pattern segmentation in prostate whole slide digitized pathology using foundation model feature embeddings"
+          <span class="venue">AUA Annual Meeting 2026 &middot; interactive poster</span>
+        </li>
+        <li>
+          "Automated segmentation of gland and stromal morphology on digitized H&amp;E-stained prostate whole slide images"
+          <span class="venue">AUA Annual Meeting 2026 &middot; interactive poster</span>
+        </li>
+        <li>
+          "Deep-learning-based segmentation of glands and stroma on digitized H&amp;E-stained prostate whole slide images"
+          <span class="venue">SPIE Medical Imaging 2026 &middot; oral presentation</span>
+        </li>
+        <li>
+          "What the 'Spotless' Mind Remembers: How Knowledge Entanglement Shapes What Leaks After Unlearning in LLMs" <a href="https://arxiv.org/abs/2510.25732" target="_blank">(arXiv)</a>
+          <span class="venue">Submitted to EACL 2026</span>
+        </li>
+        <li>
+          "Evaluating AI Sentiment Analysis" <a href="https://scholarship.rollins.edu/honors/218/" target="_blank">(thesis)</a>
+          <span class="venue">Rollins College Honors Program Theses, 2023</span>
+        </li>
+      </ul>
+    </section>
 
     <section id="technical">
-  <h2>Technical Projects</h2>
-  <ul>
-    <li class="project-item">
-      <div class="project-desc">
-        <strong>voteSmarter</strong>: Created a mobile app connecting users to political candidates based on values for voter education.
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/aakritishah/voteSmarter" target="_blank" class="btn">Project</a>
-      </div>
-    </li>
-    <li class="project-item">
-      <div class="project-desc">
-        <strong>ASLearning</strong>: Built a mobile app using object detection to assist communication between hearing-impaired and English-speaking users.
-      </div>
-      <div class="project-links">
-        <a href="https://github.com/aakritishah/ASLearning" target="_blank" class="btn">Project</a>
-      </div>
-    </li>
-  </ul>
-</section>
-
-
-
-<section id="cv-contact">
-  <h2>CV & Contact</h2>
-  <div class="cv-contact-container">
-    <div class="contact-info">
-      <div class="links">
-        <a href="CV.pdf" target="_blank" class="btn">CV</a>
-      </div>
-      <br>
-      <p>
-        <a href="mailto:u2aakriti@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> u2aakriti@gmail.com</a>
-        <a href="mailto:shahaakr@usc.edu" target="_blank"><i class="fa-regular fa-envelope"></i> shahaakr@usc.edu</a>
-      </p>
-      <br>
-      <p>
-        <a href="https://scholar.google.com/citations?user=HEZZbhUAAAAJ&hl=en&oi=ao" target="_blank">
-          <i class="fa-solid fa-graduation-cap"></i> Google Scholar
-        </a>
-        <a href="https://www.linkedin.com/in/aakriti-shah-/" target="_blank">
-          <i class="fab fa-linkedin"></i> LinkedIn
-        </a>
-        <a href="https://github.com/aakritishah" target="_blank">
-          <i class="fab fa-github"></i> GitHub
-        </a>
-      </p>
-    </div>
-    <div class="contact-pic">
-      <img src="me.jpg" alt="Aakriti Shah" />
-    </div>
-  </div>
-</section>
-
-
-
-
-    <section id="hobbies">
-        <h2>Interests & Hobbies</h2>
-        <p>Beyond research, I enjoy community outreach, rowing, baking, knitting, crocheting, sewing, film photography, and growing my vinyl collection. Below are some pics of my favorites:</p>
-        <br>
-        <h3>Baking</h3>
-        <div class="images-list baking-images">
-            <figure>
-                <img src="cake.jpeg" alt="cake">
-                <figcaption>Harry's House (Harry Styles' 3rd Studio Album) Release Party Cake</figcaption>
-            </figure>
-            <figure>
-                <img src="cake1.jpg" alt="cake1">
-                <figcaption>My Friend Kayla's 21st Birthday Cake</figcaption>
-            </figure>
-        </div>
-
-            <h3>Film Photography</h3>
-            <ul>
-                <li>I love traveling and capturing nature, cityscapes, and animals with my 35mm point-and-shoot cameras (Olympus MJU and Canon Sure Shot Telemax).</li>
-            </ul>
-            <div class="images-list">
-        <figure style="display: inline-block; margin: 10px; text-align: center;">
-            <img src="45310033.jpg" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
-            <figcaption>Mar. 18, 2023 - Colares, Portugal</figcaption>
-        </figure>  
-        
-        <figure style="display: inline-block; margin: 10px; text-align: center;">
-            <img src="IMG_7633.JPG" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
-            <figcaption>Sept. 16, 2022 - New York City</figcaption>
-        </figure>
-
-        <figure style="display: inline-block; margin: 10px; text-align: center;">
-            <img src="45310029.jpg" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
-            <figcaption>Mar. 20, 2023 - Cascais, Portugal</figcaption>
-        </figure>
-
-        <figure style="display: inline-block; margin: 10px; text-align: center;">
-            <img src="IMG_7617.jpg" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
-            <figcaption>Sept. 15, 2022 - New York City</figcaption>
-        </figure>
-
-        <figure style="display: inline-block; margin: 10px; text-align: center;">
-            <img src="45310031.jpg" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
-            <figcaption>Mar. 18, 2023 - Colares, Portugal</figcaption>
-        </figure>
-
-        <figure style="display: inline-block; margin: 10px; text-align: center;">
-            <img src="IMG_7601.JPG" alt="film" style="width: auto; max-width: 450px; max-height: 350px;">
-            <figcaption>Sept. 16, 2022 - New York City</figcaption>
-        </figure>
-        
-        
-    </div>
-
+      <h2>Projects</h2>
+      <ul>
+        <li class="project-item">
+          <div class="project-desc">
+            <strong>Dog Rescue Website</strong>: Built a website for a donation-funded dog rescue whose only online presence was a Facebook page, so they could share adoptable dogs and donation needs with their community.
+          </div>
+          <div class="project-links"></div>
+        </li>
+        <li class="project-item">
+          <div class="project-desc">
+            <strong>voteSmarter</strong>: A mobile app connecting users to political candidates based on values, with voter registration, polling locations, and candidate information.
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/aakritishah/voteSmarter" target="_blank" class="btn">Project</a>
+          </div>
+        </li>
+        <li class="project-item">
+          <div class="project-desc">
+            <strong>ASLearning</strong>: A mobile app using real-time object detection to support communication between hearing-impaired and English-speaking users.
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/aakritishah/ASLearning" target="_blank" class="btn">Project</a>
+          </div>
+        </li>
+      </ul>
     </section>
 
+    <section id="cv-contact">
+      <h2>CV &amp; Contact</h2>
+      <div class="cv-contact-container">
+        <div class="contact-info">
+          <div class="links">
+            <a href="CV.pdf" target="_blank" class="btn">CV</a>
+          </div>
+          <p>
+            <a href="mailto:u2aakriti@gmail.com" target="_blank"><i class="fa-regular fa-envelope"></i> Personal Email</a>
+            <a href="mailto:aas701@pitt.edu" target="_blank"><i class="fa-regular fa-envelope"></i> Pitt Email</a>
+          </p>
+          <p>
+            <a href="https://scholar.google.com/citations?user=HEZZbhUAAAAJ&hl=en&oi=ao" target="_blank">
+              <i class="fa-solid fa-graduation-cap"></i> Google Scholar
+            </a>
+            <a href="https://www.linkedin.com/in/aakriti-shah-/" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/aakritishah" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
+          </p>
+        </div>
+        <div class="contact-pic">
+          <img src="me.jpg" alt="Aakriti Shah" />
+        </div>
+      </div>
+    </section>
+
+    <section id="hobbies">
+      <h2>Interests &amp; Hobbies</h2>
+      <p>Beyond research, I enjoy community outreach, rowing, knitting, crocheting, sewing, film photography, and growing my vinyl collection. Below are some of my favorites:</p>
+
+      <h3>Knitting</h3>
+      <div class="knitting-images">
+        <figure>
+          <img src="knitting1-web.jpg" alt="Blue and cream colorwork knitting in progress with balls of yarn" loading="lazy">
+          <figcaption>Colorwork in progress</figcaption>
+        </figure>
+        <figure>
+          <img src="knitting2-web.jpg" alt="Navy knitting on the needles at the beach" loading="lazy">
+          <figcaption>Knitting by the beach</figcaption>
+        </figure>
+        <figure>
+          <img src="knitting3-web.jpg" alt="Holding a pink and mauve knit on the needles" loading="lazy">
+          <figcaption>Work in progress</figcaption>
+        </figure>
+        <figure>
+          <img src="knitting4-web.jpg" alt="Wearing a finished blue colorwork sweater outdoors by a lake" loading="lazy">
+          <figcaption>The finished sweater</figcaption>
+        </figure>
+      </div>
+
+      <h3>Film Photography</h3>
+      <p>I love traveling and capturing nature, cityscapes, and animals with my 35mm point-and-shoot cameras (Olympus MJU and Canon Sure Shot Telemax).</p>
+      <div class="film-strip-wrap">
+        <div class="film-strip" tabindex="0" aria-label="Film photography strip, scroll sideways">
+          <figure>
+            <img src="45310033.jpg" alt="Film photo, Colares, Portugal" loading="lazy">
+            <div class="frame-no">&#9656; 01</div>
+            <figcaption>Mar. 18, 2023 - Colares, Portugal</figcaption>
+          </figure>
+          <figure>
+            <img src="IMG_7633.JPG" alt="Film photo, New York City" loading="lazy">
+            <div class="frame-no">&#9656; 02</div>
+            <figcaption>Sept. 16, 2022 - New York City</figcaption>
+          </figure>
+          <figure>
+            <img src="45310029.jpg" alt="Film photo, Cascais, Portugal" loading="lazy">
+            <div class="frame-no">&#9656; 03</div>
+            <figcaption>Mar. 20, 2023 - Cascais, Portugal</figcaption>
+          </figure>
+          <figure>
+            <img src="IMG_7617.jpg" alt="Film photo, New York City" loading="lazy">
+            <div class="frame-no">&#9656; 04</div>
+            <figcaption>Sept. 15, 2022 - New York City</figcaption>
+          </figure>
+          <figure>
+            <img src="45310031.jpg" alt="Film photo, Colares, Portugal" loading="lazy">
+            <div class="frame-no">&#9656; 05</div>
+            <figcaption>Mar. 18, 2023 - Colares, Portugal</figcaption>
+          </figure>
+          <figure>
+            <img src="IMG_7601.JPG" alt="Film photo, New York City" loading="lazy">
+            <div class="frame-no">&#9656; 06</div>
+            <figcaption>Sept. 16, 2022 - New York City</figcaption>
+          </figure>
+        </div>
+      </div>
+      <p class="film-hint">Scroll sideways to see more frames.</p>
+    </section>
   </main>
 
   <footer>
-    <p>Updated in August 2025 – Aakriti Shah</p>
+    <p>Updated in November 2026 &ndash; Aakriti Shah</p>
   </footer>
+
+  <script>
+    var hamburger = document.getElementById('hamburger');
+    var navLinks = document.getElementById('nav-links');
+    hamburger.addEventListener('click', function () { navLinks.classList.toggle('show'); });
+    navLinks.addEventListener('click', function () { navLinks.classList.remove('show'); });
+
+    var root = document.documentElement;
+    var toggle = document.getElementById('theme-toggle');
+    var icon = document.getElementById('theme-icon');
+    function syncIcon() {
+      var dark = root.getAttribute('data-theme') === 'dark';
+      icon.className = dark ? 'fas fa-sun' : 'fas fa-moon';
+    }
+    syncIcon();
+    toggle.addEventListener('click', function () {
+      var dark = root.getAttribute('data-theme') !== 'dark';
+      if (dark) root.setAttribute('data-theme', 'dark'); else root.removeAttribute('data-theme');
+      try { localStorage.setItem('theme', dark ? 'dark' : 'light'); } catch (e) {}
+      syncIcon();
+    });
+  </script>
 </body>
 </html>
-
-
-<script>
-const hamburger = document.getElementById('hamburger');
-const navLinks = document.getElementById('nav-links');
-
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('show');
-});
-</script>
