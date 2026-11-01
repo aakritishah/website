@@ -316,3 +316,7 @@ footer { text-align: center; padding: 1.5rem 1rem 2rem; font-size: 0.9rem; color
   margin-top: 6px;
   line-height: 1.3;
 }
+
+/* ===== Wider buttons for longer labels ===== */
+.project-links:has(.btn-wide) { flex-basis: 150px; }
+.project-links .btn.btn-wide { width: 100%; padding-left: 0.5rem; padding-right: 0.5rem; white-space: nowrap; }
