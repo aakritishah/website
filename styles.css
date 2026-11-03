@@ -88,7 +88,7 @@ nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
 .theme-toggle:hover { border-color: var(--accent); }
 
 /* ===== Layout ===== */
-main { max-width: 820px; margin: 2rem auto; padding: 0 1rem; }
+main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
 section { padding: 2rem 0; border-bottom: 1px solid var(--border); }
 section:last-of-type { border-bottom: none; }
 h2 {
@@ -320,3 +320,62 @@ footer { text-align: center; padding: 1.5rem 1rem 2rem; font-size: 0.9rem; color
 /* ===== Wider buttons for longer labels ===== */
 .project-links:has(.btn-wide) { flex-basis: 150px; }
 .project-links .btn.btn-wide { width: 100%; padding-left: 0.5rem; padding-right: 0.5rem; white-space: nowrap; }
+
+/* ===== Bio layout and CV card ===== */
+.bio-container { display: flex; flex-wrap: wrap; gap: 28px; align-items: flex-start; }
+.bio-text { flex: 1 1 380px; }
+.bio-side { display: flex; gap: 18px; align-items: flex-start; flex: 0 0 auto; }
+.bio-photo {
+  width: 210px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: block;
+}
+.cv-card {
+  display: block;
+  width: 160px;
+  text-align: center;
+  color: var(--link);
+  transition: transform 0.25s ease;
+}
+.cv-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: #fff;
+  box-shadow: var(--shadow);
+  transition: box-shadow 0.25s ease;
+}
+.cv-card-label {
+  display: block;
+  margin-top: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+.cv-card:hover, .cv-card:focus-visible {
+  transform: translateY(-6px) rotate(-1.5deg);
+  text-decoration: none;
+}
+.cv-card:hover img, .cv-card:focus-visible img {
+  box-shadow: 0 10px 22px rgba(38, 48, 43, 0.22);
+}
+.contact-pic { flex: 0 0 auto; }
+.contact-pic .cv-card { width: 200px; }
+.contact-pic .cv-card img { max-width: none; border-radius: 4px; box-shadow: var(--shadow); }
+@media (max-width: 600px) {
+  .bio-side { width: 100%; justify-content: center; }
+  .bio-photo { width: 46%; }
+  .cv-card { width: 40%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .cv-card { transition: none; }
+  .cv-card:hover, .cv-card:focus-visible { transform: none; }
+}
+
+/* ===== Contact alignment ===== */
+.cv-contact-container { align-items: flex-start; }
+.contact-info p:first-child { margin-top: 0; }
+.contact-pic .cv-card { width: 170px; }
